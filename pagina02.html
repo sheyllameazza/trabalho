@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div id="pagina">
+            <h1>Faça seu Cadastro</h1>
+            <form id="cadastro">
+                <div class="nome spacing">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="name" placeholder="Nome">
+                </div>
+                <div class="sobrenome">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome">
+                </div>
+                <div class="telefone"> 
+                    <label for="text">Telefone</label>
+                    <input type="text" name="telefone" id="telefone" placeholder="Telefone">
+                </div>
+                <div class="email">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="E-mail">
+                </div>
+                <div class="botao">
+                    <input type="submit" id="btn-registrar" value="Cadastrar">
+                </div>
+            </form>
+        </div>
+        <style>
+            input,label {
+                display: block;
+                width: 100%;
+            }
+            input:focus, label:focus {
+                outline: none;
+            }
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                padding-bottom: 4vh;
+                background-color:rgb(34, 34, 34);
+                background-size: cover;
+                background-position-y:-150px;
+            }
+            #pagina {
+                width: 500px;
+                margin-left: auto;
+                margin-right: auto;
+                background-color: #F1f1f1;
+                border-radius: 10px;
+                padding: 25px;
+            }
+            #pagina h1 {
+                color: #0d0d0d;
+                text-align: center;
+                margin-bottom: 25px;
+                font-size: 1.6rem;
+            }
+            form {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            .email {
+                flex: 1 1 100%;
+                position: relative;
+            }
+            .nome {
+                flex: 1 1 45%;
+                position: relative;
+            }
+            .spacing {
+                margin-right: 2.5%;
+            }
+            label {
+                font-weight: bold;
+                font-size: .8rem;
+                color: #0d0d0d;
+            }
+            input {
+                border-bottom: 2px solid rgb(34, 34, 34);
+                padding: 10px;
+                font-size: 15px;
+                margin-bottom: 30px;
+                border-radius: 0;
+            }
+            input[type="submit"]{
+                background-color: rgb(145, 35, 209);
+                color: #F1f1f1;
+                border: none;
+                border-radius: 20px;
+                height: 40px;
+                cursor: pointer;
+                width: 100%;
+            }
+        </style>
+    </body>
+</html>
